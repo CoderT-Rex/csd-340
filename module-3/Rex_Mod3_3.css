@@ -39,12 +39,12 @@ ol, ul {
 
 ol {
     list-style: decimal;
-	padding-left: 20px;
+	padding-left: 30px;
 }
 
 ul {
     list-style: upper-roman;
-	padding-left: 20px;
+	padding-left: 30px;
 }
 
 a {
