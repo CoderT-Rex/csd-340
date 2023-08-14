@@ -1,0 +1,30 @@
+/* Setting margins */
+body {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Color scheme for headings */
+h1, h2, h3, h4 {
+    background-color: #336699;
+    color: #FFFFFF;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+/* Styling anchor tags */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Hover effect for anchor tags */
+a:hover {
+    color: #336699;
+}
+
+/* Styling visited anchor tags */
+a:visited {
+    color: #993366;
+}
