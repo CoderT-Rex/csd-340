@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.side-by-side {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.left, .right {
+    width: 45%;
+    padding: 10px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol, ul {
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 15px;
+    list-style-position: inside;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: upper-roman;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bottom {
+    float: right;
+    margin-top: 60%;
+    margin-bottom: 20px;
+}
