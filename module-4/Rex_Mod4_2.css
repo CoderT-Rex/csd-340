@@ -10,14 +10,19 @@ h1 {
     text-align: center;
 }
 
-/* Center the h3 text (title for each of the image gallery items) */
+/* Center the h3 text (title for each of the image gallery items) add ugly border per
+assignment instructions*/
 .gallery-item h3 {
     text-align: center;
+	border: 1px solid; /* Add a 1px black border around each gallery item */
+    padding: 10px; /* Add some padding for spacing */
 }
 
-/* Apply text-align center to the figure tag (this will basically center the image in the div) */
+/* Apply text-align center to the figure tag (this will basically center the image in the div)
+Add ugly border like the assignment says */
 .gallery-item figure {
     text-align: center;
+	border: 1px solid;
 }
 
 /* Apply a font style of italic to the figcaption text and set the font-size to .75em */
@@ -26,9 +31,13 @@ figcaption {
     font-size: 0.75em;
 }
 
-/* Using rgba, add a different color to the h1, h3, and figcaption tags */
-h1, .gallery-item h3, figcaption {
-    color: rgb(145, 0, 0);
+/* Using rgba, add a different color to the h1, h3, and figcaption tags 
+first number red, second green, third blue, fourth (if rgba, a standing for alpha) 
+is opacity 
+
+IDK blue is nice*/
+h1, .gallery-item h3, figure, figcaption {
+    color: rgb(0, 0, 255);
 }
 
 /* Ensure images fill their containers */
