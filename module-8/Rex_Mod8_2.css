@@ -65,27 +65,27 @@ h1 {
 
 
 footer {
-    background-color: #336699; /* Set the background color to the same color as your header */
+    background-color: #336699;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 footer p {
-    color: white; /* Set the color to white, or another appropriate color */
-    font-weight: 400; /* Set the weight to 400 */
+    color: white; 
+    font-weight: 400; 
     float: right;
-    padding-right: 10px; /* Give it a right padding of 10px */
-    font-style: italic; /* Set the font-style to italic */
+    padding-right: 10px; 
+    font-style: italic; 
 }
 
 footer a {
-    text-decoration: none; /* Remove the underline */
-    color: white; /* Set the color to white, or another appropriate color */
+    text-decoration: none; 
+    color: white; 
 }
 
 footer a:hover {
-    text-decoration: underline; /* Underline the text */
+    text-decoration: underline;
 }
 
 #movies {
@@ -98,8 +98,8 @@ footer a:hover {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #333; /* Set your desired background color for table headers */
-    color: white; /* Set your desired text color for table headers */
+    background-color: #333; 
+    color: white; 
 }
 
 #movies th, #movies td {
