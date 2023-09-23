@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" type="text/css" href="Rex_Mod10_3.css">
+    <script>
+      function changeGymImageAndText(imageFile, newText) {
+        var displayText = document.getElementById("displayText");
+        gymImage.src = imageFile;
+        displayText.textContent = newText;
+      }
+
+      function changeSmileImageAndText(imageFile, newText) {
+        var smileText = document.getElementById("smileText");
+        smileImage.src = imageFile;
+        smileText.textContent = newText;
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    </header>
+    <div class="container">
+        <div>
+            <a href="#" onmouseover="changeGymImageAndText('weakguy.jpg', 'Me after not going to the gym for 3 weeks');" onmouseout="changeGymImageAndText('strongguy.jpg', 'Me going to the gym every day');">
+                <img border="0" name="gym" src="strongguy.jpg" id="gymImage">
+            </a>
+            <div id="displayText">Me going to the gym every day</div>
+        </div>
+        <div>
+            <a href="#" onmouseover="changeSmileImageAndText('goodsmile.jpg', 'Good Smile');" onmouseout="changeSmileImageAndText('badsmile.jpg', 'Bad Smile');">
+                <img border="0" name="goodsmile" src="badsmile.jpg" id="smileImage">
+            </a>
+            <div id="smileText">Bad Smile</div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Images from:
+https://citymagazine.si/en/funniest-before-and-after-photos/before-after-teeth/
+https://th.bing.com/th/id/OIP._fLdLeZoSVIpufRDQumQDwHaGD?w=263&h=215&c=7&r=0&o=5&dpr=1.3&pid=1.7
+-->
+
+
