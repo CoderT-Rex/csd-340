@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Rex_Mod11_2.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <label for="taskInput">Enter a task:</label>
+    <input type="text" id="taskInput">
+    <button id="addButton">Add</button>
+    <button id="deleteButton">Delete Last Entry</button>
+    <button id="displayButton">Display</button>
+
+    <div id="taskList"></div>
+
+    <script>
+        // JavaScript code goes here
+        const tasks = [];
+
+        function addTask() {
+            const taskInput = document.getElementById("taskInput");
+            const task = taskInput.value.trim();
+
+            if (task !== "") {
+                tasks.push(task);
+                alert(`Task "${task}" added at position ${tasks.length}.`);
+                taskInput.value = "";
+            }
+        }
+
+        function deleteLastTask() {
+            if (tasks.length > 0) {
+                const deletedTask = tasks.pop();
+                alert(`Task "${deletedTask}" deleted.`);
+            } else {
+                alert("The task list is empty.");
+            }
+        }
+
+        function displayTasks() {
+            const taskList = document.getElementById("taskList");
+            taskList.innerHTML = "";
+
+            for (let i = 0; i < tasks.length; i++) {
+                const listItem = document.createElement("div");
+                listItem.textContent = `${i + 1}. ${tasks[i]}`;
+                taskList.appendChild(listItem);
+            }
+        }
+
+        document.getElementById("addButton").addEventListener("click", addTask);
+        document.getElementById("deleteButton").addEventListener("click", deleteLastTask);
+        document.getElementById("displayButton").addEventListener("click", displayTasks);
+    </script>
+</body>
+</html>
